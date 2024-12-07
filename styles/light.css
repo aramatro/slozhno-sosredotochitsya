@@ -1,44 +1,35 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   --background-color: #fff1f7;
   --accent-color: #ff8dcb;
+  --decorated-elements-color: #353430;
   --button-text-color: #353430;
   --subtitle-text-color: #353430;
   --main-text-color: #353430;
   --accent-text-color: #353430;
   --title-text-color: #ffc2e6;
-  --header-background: url(../images/cover-image-light.png) no-repeat center /
+  --background-image: url(../images/cover-image-light.png) no-repeat center /
     cover;
 }
 
-.page.theme_light .header__decorated-word {
+.theme_light .header__decorated-word {
   display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* Дублируем переменные светлой темы */
     --background-color: #fff1f7;
     --accent-color: #ff8dcb;
+    --decorated-elements-color: #353430;
     --button-text-color: #353430;
     --subtitle-text-color: #353430;
     --main-text-color: #353430;
     --accent-text-color: #353430;
     --title-text-color: #ffc2e6;
-    --header-background: url(../images/cover-image-light.png) no-repeat center /
+    --background-image: url(../images/cover-image-light.png) no-repeat center /
       cover;
   }
 
-  .page.theme_light .header__decorated-word {
+  .header__decorated-word {
     display: none;
   }
 }

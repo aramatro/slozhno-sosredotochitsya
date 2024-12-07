@@ -1,12 +1,8 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
   --background-color: #000028;
   --accent-color: #ff0070;
   --button-text-color: #ff0070;
+  --decorated-elements-color: #ff0070;
   --subtitle-text-color: #ff0070;
   --main-text-color: #f1b2ce;
   --accent-text-color: #000028;
@@ -15,7 +11,7 @@
   --main-text-size: 18px;
   --regular-font-weight: 400;
   --bold-font-weight: 700;
-  --header-background: url(../images/cover-image-dark.png) no-repeat center /
+  --background-image: url(../images/cover-image-dark.png) no-repeat center /
     cover;
   --page-margins: 10px;
 }
