@@ -11,15 +11,16 @@
   --main-text-color: #f1b2ce;
   --accent-text-color: #000028;
   --title-text-color: #db00ff;
-  --font-family: 'IBM Plex mono';
+  --font-family: "IBM Plex mono";
   --main-text-size: 18px;
   --regular-font-weight: 400;
   --bold-font-weight: 700;
-  --header-background: url(../images/cover-image-dark.png) no-repeat center / cover;
+  --header-background: url(../images/cover-image-dark.png) no-repeat center /
+    cover;
   --page-margins: 10px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   :root {
     --page-margins: 20px;
   }
