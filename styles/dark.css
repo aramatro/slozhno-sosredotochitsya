@@ -7,7 +7,8 @@
   --main-text-color: #f1b2ce;
   --accent-text-color: #000028;
   --title-text-color: #db00ff;
-  --background-image: url(../images/cover-image-dark.png) no-repeat center / cover;
+  --background-image: url(../images/cover-image-dark.png) no-repeat center /
+    cover;
 }
 
 .theme_dark .header__decorated-word {

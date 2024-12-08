@@ -1,11 +1,6 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   width: 100%;
-  background: var(--background-image);
-  background-color: var(--background-color);
-  background-attachment: fixed;
+  background: var(--background-color) var(--background-image) fixed;
 }
 
 .header {
@@ -82,7 +77,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid color(from var(--button-text-color) display-p3 r g b / 0.4);
+  border: 1px solid color(from var(--button-text-color) display-p3 r g b / .4);
 }
 
 .header__theme-menu-button:focus {
@@ -115,29 +110,29 @@
   font-weight: var(--bold-font-weight);
 }
 
-.content {
-  display: grid;
-  margin-inline: var(--page-margins);
-}
-
-.why {
-  margin-block-end: 10px;
-}
-
-.subtitle {
-  padding-block-start: 40px;
-  color: var(--subtitle-text-color);
-  font-weight: var(--bold-font-weight);
-  font-size: var(--main-text-size);
-  line-height: 130%;
-}
-
 .accent-text {
   color: var(--accent-text-color);
   font-weight: var(--bold-font-weight);
   font-size: var(--main-text-size);
   line-height: 130%;
   background-color: var(--accent-color);
+}
+
+.content-same-grid {
+  display: grid;
+  margin-inline: var(--page-margins);
+}
+
+.content-why {
+  margin-block-end: 10px;
+}
+
+.content__subtitle {
+  padding-block-start: 40px;
+  color: var(--subtitle-text-color);
+  font-weight: var(--bold-font-weight);
+  font-size: var(--main-text-size);
+  line-height: 130%;
 }
 
 .list-item-title {
@@ -175,13 +170,13 @@
   font-size: var(--main-text-size);
 }
 
-.what {
+.content-what {
   display: grid;
   margin-inline: var(--page-margins);
   margin-block-end: 10px;
 }
 
-.how {
+.content-how {
   margin-block-end: 50px;
 }
 
@@ -208,6 +203,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .footer {
@@ -247,28 +243,28 @@
     max-inline-size: 364px;
   }
 
-  .content {
+  .content-same-grid {
     grid-template-columns: 236px 1fr;
     gap: 20px;
   }
 
-  .why {
+  .content-why {
     margin-block-end: 60px;
   }
 
-  .subtitle {
+  .content__subtitle {
     padding-block-start: 20px;
   }
 
-  .what {
+  .content-what {
     margin-block-end: 60px;
   }
 
-  .what .subtitle {
+  .content-what .content__subtitle {
     max-width: 236px;
   }
 
-  .how {
+  .content-how {
     margin-block-end: 80px;
   }
 
@@ -326,15 +322,15 @@
     max-inline-size: 491px;
   }
 
-  .content {
+  .content-same-grid {
     grid-template-columns: 315px 1fr;
   }
 
-  .what .subtitle {
+  .content-what .content__subtitle {
     max-width: 315px;
   }
 
-  .what .content__list {
+  .content-what .content__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
